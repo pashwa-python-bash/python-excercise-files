@@ -1,0 +1,32 @@
+print("I will tell you your personality by you just telling me your favourite hobby out of the options below : \n")
+q = (str(input("type your favourite hobby out of these options. [sports(this includes dancing or any physical activity), cooking, playing video games, painting, playing an instrument, sleeping, watching tv, reading, experimenting with technology] :\n ")))
+
+if q == ("sports"):
+  print ("Your a person who doesn't like sitting down and doing nothing, you like to be constantly moving and you might have quite a lot of energy")
+
+elif  q == ("cooking"):
+  print ("you like to be around food and try doing new things, you think you might have a talent in something but you don't. YOU'RE NOT SPECIAL! it is all from practise.")
+
+elif q == ("playing video games"):
+  print ("you're quite a lazy person, you have no talent and all you can do is just sit down and stare at a screen! you're useless!")
+
+elif  q == ("painting"):
+  print ("you are a creative person who likes to use their hand a lot because that's all you can do. Just joking, you're a creative person and if you have skill in what you do, you should carry on doing it as a lot of people aren't good at painting")
+
+elif q == ("playing an instrument"):
+  print ("you're a person who likes to listen to music and you might quite enjoy doing it aswell. You are trash at it tho and just think you are good")
+
+elif  q == ("sleeping"):
+  print ("If you like to do this the most, i only have one tip for you... YOU'RE LAZY SO YOU MIGHT ASWELL STAY ASLEEP FOREVER(if you understand what i'm trying to say)")
+
+elif q == ("watching tv"):
+  print ("i have the same tip for you which i gave to the people who like to sleep a lot... YOU'RE LAZY SO YOU MIGHT ASWELL STAY SAT DOWN FOREVER(if you understand what i'm trying to say...) ")
+
+elif  q == ("reading"):
+  print ("you're quite a shy person in life and you don't speak much. you don't have as many friends as other people because YOU'RE LONELY AND A NERD")
+
+elif q == ("experimenting with technology"):
+  print ("If you do this, you're quite like Pashwa Modi(me). you like to get your hands on different type of technology as fast as you can and you like to test them out a bit like me. If i get my hands on a new tv remote,i would test out every button to see what it can do")
+
+else :
+  print ("hobby not in database")

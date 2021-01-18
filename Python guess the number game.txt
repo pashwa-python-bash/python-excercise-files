@@ -1,0 +1,54 @@
+import random
+
+number = random.randint(1,10)
+tries = 0
+
+uname = input("Pls enter your gamer name :")
+uname = uname.strip()
+
+print(f"Hello! {uname}, welcome to guess the number")
+print("if you want to play, type yes if not then type no...")
+
+option = input("Type yes or no here :").lower()
+option = str(option)
+
+if option=="yes":
+  print("I have picked a random number and you have 3 tries to guess it or else you fail!")
+
+  guess = input("first try,guess a number between 1-10")
+  guess = int(guess)
+  tries+=1
+
+  if guess>number:
+    print("You guessed too high,guess lower")
+  if guess<number:
+    print("You guessed too low, guess higher")
+
+  while guess!=number and tries<3:
+    guess = input("Second try, try again :")
+    guess = int(guess)
+    tries+=1
+  #print(f"you have had {tries} tries")
+    if guess>number:
+      print("You have guessed too high, guess lower")
+    if guess<number:
+      print("You have guessed too low, guess higher")
+    while guess!=number and tries<3:
+      guess = input("third try, Try again: ")
+      guess = int(guess)
+      tries+=1
+
+      if guess>number:
+        print("You guessed too high, guess lower")
+      if guess<number:
+        print("You guessed too low, guess higher")
+
+  if guess==number:
+    print("You won!")
+    print(f"Number of tries which it took: {tries}")
+  else:
+    print("You lost! :(")
+elif option=="no":
+  print("Thank you for coming anyways...")
+else:
+  print("Invalid option")

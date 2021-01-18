@@ -1,0 +1,28 @@
+#1
+colour = []
+colour.append("Yellow")
+colour.append("Blue")
+colour.append("White")
+colour.append("Pink")
+print(colour)
+
+#2
+colour.append("Grey")
+colour.append("Violet")
+colour.append("Black")
+print(colour[2])
+print(colour[4])
+
+#3
+colour.pop(3)
+print(colour)
+
+#4
+colour.sort()
+print(colour)
+
+#5
+ 'remove' removes the matching object so if i put .remove("Blue"), only then would it work.Pop removes the element at a specific index so you can do .pop(3) like i did above.
+
+#6
+ in insert, you can add the object in any place whilst in append, the object always gets added to the back.

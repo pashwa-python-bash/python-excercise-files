@@ -1,0 +1,7 @@
+print("I will guess your age(this trick will only work on people who are age 10-99 :")
+input("First, take the first digit in your age and multiply it by 5. e.g. If my age was 13, i would times 1 by 5 thus giving me the number 5. Type yes once you have done that :") 
+input("Now add 4 to your current number E.g. if your current number is 5, it woud turn to 9. Type yes once you have done that :")
+input("Now double your answer. E.g. if your current number is 9, it would turn to 18. Type yes once you have done that :")
+number = input("Now add the last digit of your original number. E.g. if my age was 13(that is my original number), i would add 3 to 18 thus giving me the number 21. Type in your current number after you have done that last step :")
+age = int(number) - int(8)
+print(f" your age is {age}")

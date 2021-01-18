@@ -1,0 +1,26 @@
+print("I will tell you what you are like by you telling me your favourite animal out of the options below...\n")
+q = (str(input("type your favourite animal out of these options [horse,dog,cat,fish,owl,tiger,lion] :\n ")))
+
+if q == ("horse"):
+  print ("you like speed and you have quite a big range. You are somtimes loud but are also sometimes quiet. You are sometimes agressives and sometimes you are passive")
+
+elif  q == ("dog"):
+  print ("you are quite noisy and don't like sitting still. MEN LOVE YOU")
+
+elif q == ("cat"):
+  print ("You are usually quite quiet but if somebody annoys you, you get angry. You also love food.")
+
+elif  q == ("fish"):
+  print ("YOU PROBABLY WON'T EVEN REMEMBER THAT THIS IS YOUR FAVOURITE ANIMAL BECAUSE YOU HAVE TRASH MEMORY!  ")
+
+elif q == ("owl"):
+  print ("You are quite smart and intelligent, you have a high iq but you also quite NERDY SO THAT'S WHY NOBODY LIKES YOU.")
+
+elif  q == ("tiger"):
+  print ("You are quite agressive but you are also quite fast especially if you running for soomething.")
+
+elif q == ("lion"):
+  print ("You are quite agressive but you are also quite fast especially if you running for soomething. YOU ARE ALSO VERY HAIRY.")
+
+else :
+  print ("animal not in database")

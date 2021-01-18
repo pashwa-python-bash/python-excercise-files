@@ -1,0 +1,11 @@
+placement = int(input("What is your current favourite footbaall team's placement in the current national league :"))
+if placement < 3:
+  print("Your team is doing very good, well done.")
+elif placement < 5:
+  print("Your team is doing good but they can still push for a higher placement")
+elif placement < 8:
+  print("Your team is round about in the middle. They are doing alright")
+elif placement < 12:
+  print("your team is doing bad, they need to do better.")
+else:
+  print("your team is trash")
