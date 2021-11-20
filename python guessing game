@@ -1,0 +1,83 @@
+import random
+
+number = random.randint(1,100)
+tries = 0
+total_guesses = 0
+uname = input("Pls enter your gamer name :")
+uname = uname.strip()
+best_tries=100
+games_played = 0
+guesses_made=[]
+var=0
+average_guesses = 0
+print(f"Hello! {uname}, welcome to guess the number")
+q1="yes"
+
+
+while q1 =="yes":
+  game_settings=int(input("What do you want the upper limit of the game to be?(you only get 3 tries!):  "))
+  number = random.randint(1,game_settings)
+  print("I have picked a random number and you have 3 tries to guess it or else you fail!")
+
+  guess = input(f"first try,guess a number between 1-{game_settings} :")
+  guess = int(guess)
+  tries+=1
+
+  if guess>number:
+    print("You guessed too high,guess lower")
+  if guess<number:
+    print("You guessed too low, guess higher")
+
+  while guess!=number and tries<3:
+    guess = input("Second try, try again :")
+    guess = int(guess)
+    tries+=1
+  #print(f"you have had {tries} tries")
+    if guess>number:
+      print("You have guessed too high, guess lower")
+    if guess<number:
+      print("You have guessed too low, guess higher")
+    while guess!=number and tries<3:
+      guess = int(input("third try, try again : "))
+      tries+=1
+
+      if guess>number:
+        print("You guessed too high, guess lower")
+      if guess<number:
+        print("You guessed too low, guess higher")
+  
+  if guess==number:
+    print(f" Well done {uname}, you won!")
+    print(f"Number of tries which it took: {tries}")
+  
+  else:
+    print("You lost! :(")
+    print(f"the number was {number}")
+    tries = 4
+  if tries < best_tries: 
+    best_tries=tries
+  games_played+=1
+  if tries >= 4:
+    tries = 3
+  guesses_made.append(tries)
+  
+  q1=input("If you want to continue type 'yes', if not type 'no':  ")
+  if q1=='no':
+    if best_tries >= 4:
+      best_tries="DNF!"
+    print("Your best amount of guesses was " + str(best_tries))
+    print("you have played " + str(games_played) + " amount of games")
+    while var < len(guesses_made):
+      total_guesses += guesses_made[var]
+      average_guesses += guesses_made[var]
+      var+=1
+    average_guesses = round(average_guesses/len(guesses_made))
+      
+
+    print(f"the total number of guesses throughout the rounds is {total_guesses} and the average amount of guesses throughout each round is {average_guesses} (1 s.f.)")
+
+    break
+    guesses_made.append(tries)
+
+  number = random.randint(1,100)
+  tries = 0
